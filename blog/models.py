@@ -8,3 +8,6 @@ class Publication(models.Model):
         on_delete=models.CASCADE,
     )
     body = models.TextField()
+
+    def __str__(self) -> str:
+        return self.title
