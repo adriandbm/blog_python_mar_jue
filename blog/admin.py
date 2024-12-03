@@ -12,6 +12,7 @@ class PublicationAdmin(admin.ModelAdmin):
     )
     search_fields= (
         "title",
-        "author",
+        "body",
+        "author__username"
     )
 admin.site.register(Publication, PublicationAdmin) 
